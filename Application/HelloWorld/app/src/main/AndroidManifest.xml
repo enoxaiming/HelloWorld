@@ -5,19 +5,23 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+            android:name=".HWApplication"
             android:hardwareAccelerated="true"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".HWMainActivity">
+        <activity android:name=".HWMainActivity"
+                  android:theme="@style/FullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".HWWelcomeActivity"
+                  android:theme="@style/FullScreenTheme" />
     </application>
 
 </manifest>

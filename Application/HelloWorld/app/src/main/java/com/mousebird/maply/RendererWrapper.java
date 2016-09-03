@@ -20,6 +20,7 @@
 
 package com.mousebird.maply;
 
+import android.graphics.Color;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLSurfaceView.Renderer;
 import android.util.Log;
@@ -58,7 +59,7 @@ class RendererWrapper implements GLSurfaceView.Renderer, GLTextureView.Renderer
 
 	@Override
 	public void onSurfaceCreated(GL10 gl, EGLConfig config)
-	{		
+	{
 		maplyRender = new MaplyRenderer();
   		maplyRender.setScene(scene);
 		maplyRender.setView(view);
@@ -101,9 +102,10 @@ class RendererWrapper implements GLSurfaceView.Renderer, GLTextureView.Renderer
 	boolean firstFrame = true;
 	
 	@Override
-	public void onDrawFrame(GL10 gl)
+	public void onDrawFrame(final GL10 gl)
 	{
-		// This is a hack to eliminate a flash we see at the beginning
+
+        // This is a hack to eliminate a flash we see at the beginning
 		// It's a blank view on top of our view, which we get rid of when we
 		//  actually draw something there.
 		// http://stackoverflow.com/questions/19970829/android-and-opengl-gives-black-frame-at-startup
@@ -114,8 +116,9 @@ class RendererWrapper implements GLSurfaceView.Renderer, GLTextureView.Renderer
 					new Runnable() {
 						@Override
 						public void run() {
-							if (maplyControl != null)
-								maplyControl.getContentView().setBackground(null);
+							//if (maplyControl != null)
+                            gl.glClearColor(0, 0, 0, 0);
+                            maplyControl.getContentView().setBackground(null);
 						}
 					}
 			);

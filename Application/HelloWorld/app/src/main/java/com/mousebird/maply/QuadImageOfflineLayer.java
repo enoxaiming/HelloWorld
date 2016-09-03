@@ -21,7 +21,7 @@ public class QuadImageOfflineLayer extends Layer implements LayerThread.ViewWatc
     }
 
     /**
-     * Fill in this interface to get the rendered images back as they're ready.
+     * Fill in this interfaces to get the rendered images back as they're ready.
      */
     public interface RenderedImageDelegate
     {

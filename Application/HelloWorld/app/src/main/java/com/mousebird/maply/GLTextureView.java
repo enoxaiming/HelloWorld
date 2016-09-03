@@ -508,7 +508,7 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
     }
 
     /**
-     * This method is part of the SurfaceTextureListener.Callback interface, and is
+     * This method is part of the SurfaceTextureListener.Callback interfaces, and is
      * not normally called or subclassed by clients of GLSurfaceView.
      */
     public void surfaceCreated(SurfaceTexture holder) {
@@ -521,7 +521,7 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
     }
 
     /**
-     * This method is part of the SurfaceTextureListener.Callback interface, and is
+     * This method is part of the SurfaceTextureListener.Callback interfaces, and is
      * not normally called or subclassed by clients of GLSurfaceView.
      */
     public void surfaceDestroyed(SurfaceTexture holder) {
@@ -532,7 +532,7 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
     { surfaceDestroyed(surface); return true; }
 
     /**
-     * This method is part of the SurfaceTextureListener.Callback interface, and is
+     * This method is part of the SurfaceTextureListener.Callback interfaces, and is
      * not normally called or subclassed by clients of GLSurfaceView.
      */
     public void surfaceChanged(SurfaceTexture holder, int format, int w, int h) {
@@ -611,10 +611,10 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
     }
     // ----------------------------------------------------------------------
     /**
-     * An interface used to wrap a GL interface.
+     * An interfaces used to wrap a GL interfaces.
      * <p>Typically
      * used for implementing debugging and tracing on top of the default
-     * GL interface. You would typically use this by creating your own class
+     * GL interfaces. You would typically use this by creating your own class
      * that implemented all the GL methods by delegating to another GL instance.
      * Then you could add your own behavior before or after calling the
      * delegate. All the GLWrapper would do was instantiate and return the
@@ -633,19 +633,19 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
      */
     public interface GLWrapper {
         /**
-         * Wraps a gl interface in another gl interface.
-         * @param gl a GL interface that is to be wrapped.
+         * Wraps a gl interfaces in another gl interfaces.
+         * @param gl a GL interfaces that is to be wrapped.
          * @return either the input argument or another GL object that wraps the input argument.
          */
         GL wrap(GL gl);
     }
     /**
-     * A generic renderer interface.
+     * A generic renderer interfaces.
      * <p>
      * The renderer is responsible for making OpenGL calls to render a frame.
      * <p>
      * GLSurfaceView clients typically create their own classes that implement
-     * this interface, and then call {@link GLSurfaceView#setRenderer} to
+     * this interfaces, and then call {@link GLSurfaceView#setRenderer} to
      * register the renderer with the GLSurfaceView.
      * <p>
      *
@@ -695,8 +695,8 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
          * the corresponding "glDelete" methods such as glDeleteTextures to
          * manually delete these lost resources.
          * <p>
-         * @param gl the GL interface. Use <code>instanceof</code> to
-         * test if the interface supports GL11 or higher interfaces.
+         * @param gl the GL interfaces. Use <code>instanceof</code> to
+         * test if the interfaces supports GL11 or higher interfaces.
          * @param config the EGLConfig of the created surface. Can be used
          * to create matching pbuffers.
          */
@@ -719,8 +719,8 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
          *     gl.glFrustumf(-ratio, ratio, -1, 1, 1, 10);
          * }
          * </pre>
-         * @param gl the GL interface. Use <code>instanceof</code> to
-         * test if the interface supports GL11 or higher interfaces.
+         * @param gl the GL interfaces. Use <code>instanceof</code> to
+         * test if the interfaces supports GL11 or higher interfaces.
          * @param width
          * @param height
          */
@@ -737,15 +737,15 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
          *     //... other gl calls to render the scene ...
          * }
          * </pre>
-         * @param gl the GL interface. Use <code>instanceof</code> to
-         * test if the interface supports GL11 or higher interfaces.
+         * @param gl the GL interfaces. Use <code>instanceof</code> to
+         * test if the interfaces supports GL11 or higher interfaces.
          */
         void onDrawFrame(GL10 gl);
     }
     /**
-     * An interface for customizing the eglCreateContext and eglDestroyContext calls.
+     * An interfaces for customizing the eglCreateContext and eglDestroyContext calls.
      * <p>
-     * This interface must be implemented by clients wishing to call
+     * This interfaces must be implemented by clients wishing to call
      * {@link GLTextureView#setEGLContextFactory(EGLContextFactory)}
      */
     public interface EGLContextFactory {
@@ -772,9 +772,9 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
         }
     }
     /**
-     * An interface for customizing the eglCreateWindowSurface and eglDestroySurface calls.
+     * An interfaces for customizing the eglCreateWindowSurface and eglDestroySurface calls.
      * <p>
-     * This interface must be implemented by clients wishing to call
+     * This interfaces must be implemented by clients wishing to call
      * {@link GLTextureView#setEGLWindowSurfaceFactory(EGLWindowSurfaceFactory)}
      */
     public interface EGLWindowSurfaceFactory {
@@ -808,10 +808,10 @@ public class GLTextureView extends TextureView implements TextureView.SurfaceTex
         }
     }
     /**
-     * An interface for choosing an EGLConfig configuration from a list of
+     * An interfaces for choosing an EGLConfig configuration from a list of
      * potential configurations.
      * <p>
-     * This interface must be implemented by clients wishing to call
+     * This interfaces must be implemented by clients wishing to call
      * {@link GLTextureView#setEGLConfigChooser(EGLConfigChooser)}
      */
     public interface EGLConfigChooser {

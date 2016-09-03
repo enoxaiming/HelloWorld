@@ -21,7 +21,7 @@ package com.mousebird.maply;
 
 import android.graphics.Color;
 
-/** The Light provides a simple interface to basic lighting within the toolkit.
+/** The Light provides a simple interfaces to basic lighting within the toolkit.
  * <br>
  * You can have up to 8 lights in the current version of the toolkit.  Obviously this is all shader implementation with OpenGL ES 2.0, so you can always just bypass this and do what you like.  However, the default shaders will look for these lights.
  * The lights are very simple, suitable for the globe, and contain a position, a couple of colors, and a view dependent flag.

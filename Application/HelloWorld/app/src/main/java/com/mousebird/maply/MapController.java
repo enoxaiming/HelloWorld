@@ -470,7 +470,7 @@ public class MapController extends MaplyBaseController implements View.OnTouchLi
 	MapGestureHandler gestureHandler = null;
 	
 	/**
-	 * Use this delegate when you want user interface feedback from the maply controller.
+	 * Use this delegate when you want user interfaces feedback from the maply controller.
 	 * 
 	 * @author sjg
 	 *

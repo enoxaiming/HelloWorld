@@ -23,7 +23,7 @@ package com.mousebird.maply;
 import java.util.List;
 
 /**
- * The Vector Manager is an interface to the Maply C++ vector
+ * The Vector Manager is an interfaces to the Maply C++ vector
  * manager and should be invisible to toolkit users.
  *
  */

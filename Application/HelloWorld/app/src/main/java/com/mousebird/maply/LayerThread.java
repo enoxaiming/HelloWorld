@@ -57,7 +57,7 @@ public class LayerThread extends HandlerThread implements View.ViewWatcher
 
 	/**
 	 * Objects that want to be called when the view updates its position
-	 * fill out this interface and register with the layer thread.  These
+	 * fill out this interfaces and register with the layer thread.  These
 	 * are probably layers.
 	 * 
 	 * @author sjg

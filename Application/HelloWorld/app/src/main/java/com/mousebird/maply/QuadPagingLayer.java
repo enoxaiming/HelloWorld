@@ -46,7 +46,7 @@ public class QuadPagingLayer extends Layer implements LayerThread.ViewWatcherInt
 	}
 	
 	/**
-	 * This is the interface paging delegates must fill in.
+	 * This is the interfaces paging delegates must fill in.
 	 * You'll get called back on the startFetchForTile on the layerThread.
 	 * Ideally, you should spawn other threads to do your fetching and
 	 * processing.
