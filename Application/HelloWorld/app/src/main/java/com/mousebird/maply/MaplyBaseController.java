@@ -77,7 +77,7 @@ public class MaplyBaseController
 	boolean running = false;
 
 	// Implements the GL renderer protocol
-	protected RendererWrapper renderWrapper;
+	public RendererWrapper renderWrapper;
 
 	// Coordinate system to display conversion
 	protected CoordSystemDisplayAdapter coordAdapter;

@@ -39,7 +39,7 @@ public class View
 	 * to display coordinates and vice versa.
 	 * @return
 	 */
-	CoordSystemDisplayAdapter getCoordAdapter()
+	public CoordSystemDisplayAdapter getCoordAdapter()
 	{
 		return coordAdapter;
 	}
@@ -111,7 +111,7 @@ public class View
 	}
 
 	// Return the current model & view matrix combined (but not projection)
-	native Matrix4d calcModelViewMatrix();
+	public native Matrix4d calcModelViewMatrix();
 
 	// Return the height for a given map scale
 	public native double heightForMapScale(double scale,double frameSizeX,double frameSizeY);

@@ -1,1 +1,2 @@
-include ':app'
+include ':app', ':libColorDialog'
+project(':libColorDialog').projectDir = new File('ColorDialog')

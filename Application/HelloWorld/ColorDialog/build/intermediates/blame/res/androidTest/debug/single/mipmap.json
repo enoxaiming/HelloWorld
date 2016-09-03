@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/res/merged/androidTest/debug/mipmap/ic_help.png",
+        "source": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/bundles/debug/res/mipmap/ic_help.png"
+    },
+    {
+        "merged": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/res/merged/androidTest/debug/mipmap/ic_info.png",
+        "source": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/bundles/debug/res/mipmap/ic_info.png"
+    },
+    {
+        "merged": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/res/merged/androidTest/debug/mipmap/icon_warning.png",
+        "source": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/bundles/debug/res/mipmap/icon_warning.png"
+    },
+    {
+        "merged": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/res/merged/androidTest/debug/mipmap/ic_wrong.png",
+        "source": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/bundles/debug/res/mipmap/ic_wrong.png"
+    },
+    {
+        "merged": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/res/merged/androidTest/debug/mipmap/ic_success.png",
+        "source": "/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/intermediates/bundles/debug/res/mipmap/ic_success.png"
+    }
+]

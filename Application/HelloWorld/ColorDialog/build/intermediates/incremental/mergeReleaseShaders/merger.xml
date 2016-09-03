@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/src/main/shaders"/></dataSet><dataSet config="release"><source path="/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/src/release/shaders"/></dataSet></merger>

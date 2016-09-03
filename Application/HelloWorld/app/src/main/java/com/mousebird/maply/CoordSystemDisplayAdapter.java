@@ -26,7 +26,7 @@ package com.mousebird.maply;
  * of the toolkit.
  *
  */
-class CoordSystemDisplayAdapter 
+public class CoordSystemDisplayAdapter
 {
 	CoordSystem coordSys = null;
 	

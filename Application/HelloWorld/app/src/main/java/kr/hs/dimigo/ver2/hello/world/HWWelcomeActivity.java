@@ -10,6 +10,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
+import cn.refactor.lib.colordialog.ColorDialog;
+import cn.refactor.lib.colordialog.PromptDialog;
 import com.yalantis.starwars.TilesFrameLayout;
 import com.yalantis.starwars.interfaces.TilesFrameLayoutListener;
 import kr.hs.dimigo.ver2.hello.world.particle.HWParticleRenderer;
@@ -33,15 +35,11 @@ public class HWWelcomeActivity extends AppCompatActivity {
         mSurfaceView = (GLSurfaceView)findViewById(R.id.hw_welcome_activity_GLSURFACEVIEW);
         mFrameLayout = (FrameLayout)findViewById(R.id.hw_welcome_activity_FRAMELAYOUT);
 
-        if(checkSupportedOpenGLSupported()) {
-            mSurfaceView.setEGLContextClientVersion(2);
+        mSurfaceView.setEGLContextClientVersion(2);
 
-            HWParticleRenderer mParticleRenderer = new HWParticleRenderer(mSurfaceView);
-            mSurfaceView.setRenderer(mParticleRenderer);
-            mSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
-        } else {
-            //Not Supported
-        }
+        HWParticleRenderer mParticleRenderer = new HWParticleRenderer(mSurfaceView);
+        mSurfaceView.setRenderer(mParticleRenderer);
+        mSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
 
         HWWelcomeFragment mWelcomeFragment = new HWWelcomeFragment();
         FragmentTransaction mTransaction = getSupportFragmentManager().beginTransaction();
@@ -50,12 +48,12 @@ public class HWWelcomeActivity extends AppCompatActivity {
         mTransaction.commit();
     }
 
-    private boolean checkSupportedOpenGLSupported() {
+    /*private boolean checkSupportedOpenGLSupported() {
         ActivityManager mManager = (ActivityManager)getSystemService(Context.ACTIVITY_SERVICE);
         ConfigurationInfo mInfo = mManager.getDeviceConfigurationInfo();
 
         return mInfo.reqGlEsVersion >= 0x2000;
-    }
+    }*/
 
     /*public TilesFrameLayout getTileLayout() {
         return mTileLayout;

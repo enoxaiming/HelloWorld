@@ -56,7 +56,7 @@ public class HWGlobeFragment extends GlobeMapFragment {
 
         globeControl.addLayer(mBaseLayer);
         globeControl.handleStartMoving(true);
-        globeControl.animatePositionGeo(2.2265329360961914, 0.6531323790550232, 0.37025268615338325, 1.0);
+        globeControl.animatePositionGeo(2.237851619720459, 0.6353013515472412, 0.5716807365417481, 1.0);
         globeControl.gestureDelegate = new GlobeController.GestureDelegate() {
             @Override
             public void userDidSelect(GlobeController globeControl, SelectedObject[] selObjs, Point2d loc, Point2d screenLoc) {
@@ -89,12 +89,18 @@ public class HWGlobeFragment extends GlobeMapFragment {
                 mCurrentPositionAxis[1] = globeControl.getPositionGeo().getY();
                 mCurrentPositionAxis[2] = globeControl.getPositionGeo().getZ();
 
+                //Log.e("Axis", globeControl.getPositionGeo().toString());
+                Log.e("Height", globeControl.getGlobeView().getHeight() + "");
+
                 if(globeControl.getGlobeView().getHeight() > 0.80) {
                     globeControl.getGlobeView().setHeight(0.80);
                     globeControl.animatePositionGeo(mCurrentPositionAxis[0], mCurrentPositionAxis[1], mCurrentPositionAxis[2], 1.0);
                 }
             }
         };
+
+        HWMainActivity mActivity = (HWMainActivity)getActivity();
+        mActivity.setGlobeControl(globeControl);
     }
 
     private void insertMarker() {

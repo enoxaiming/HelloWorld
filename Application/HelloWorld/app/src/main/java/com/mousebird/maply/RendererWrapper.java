@@ -34,7 +34,7 @@ import javax.microedition.khronos.opengles.GL10;
  * This is an internal class used to talk to the OpenGL ES surface.
  * 
  */
-class RendererWrapper implements GLSurfaceView.Renderer, GLTextureView.Renderer
+public class RendererWrapper implements GLSurfaceView.Renderer, GLTextureView.Renderer
 {
 	boolean valid = true;
 	public MaplyRenderer maplyRender = null;

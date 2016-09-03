@@ -4,4 +4,18 @@
     <string name="hw_welcome_layout_TITLE">Hello World!</string>
     <string name="hw_welcome_layout_SMALL_TITLE">세계정복 대작전</string>
     <string name="hw_welcome_layout_GOGO_BUTTON_TEXT">세계정복 하러가기</string>
+
+    <string name="hw_connect_joystic">조이스틱 연결</string>
+    <string name="hw_main_tip_i_text">지구본을 움직이면서 파란색 마커를 터치하세요</string>
+    <string name="hw_main_tip_ii_text">조이스틱으로 지구본을 움직이면서 빨간색 커서에 파란색 마커를 넣으세요</string>
+    <string name="hw_main_tip_iii_text">카드를 휴대폰 또는 조이스틱에 접촉하세요</string>
+
+    <string name="hw_hardware_not_supported_TITLE">오류</string>
+    <string name="hw_hardware_not_supported_SUMMARY">네트워크에 연결되어 있지 않습니다.\n연결 후 재시도 해주세요.</string>
+    <string name="hw_bluetooth_not_supported_SUMMARY">블루투스를 지원하지 않습니다.</string>
+    <string name="hw_bluetooth_goto_settings">조이스틱과 블루투스를 통해 연결해주세요.\n(안될 경우 페어링 해제 후 시도하세요.)</string>
+
+    <string name="hw_bluetooth_joystick_connected">조이스틱 연결됨</string>
+
+    <string name="hw_ok">확인</string>
 </resources>
