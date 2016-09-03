@@ -293,6 +293,7 @@ public class MaplyBaseController
 				glSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
 				glSurfaceView.setRenderer(renderWrapper);
 				glSurfaceView.setZOrderOnTop(true);
+				glSurfaceView.setZOrderMediaOverlay(true);
 				glSurfaceView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
 
 

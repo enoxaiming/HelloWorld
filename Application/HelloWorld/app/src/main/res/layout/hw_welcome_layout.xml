@@ -49,7 +49,7 @@
                 android:id="@+id/hw_welcome_layout_BUTTON"
                 android:background="@drawable/hw_welcome_button"
                 android:text="@string/hw_welcome_layout_GOGO_BUTTON_TEXT"
-                android:lines="1"
+                android:contentDescription="@string/hw_welcome_layout_GOGO_BUTTON_TEXT"
                 android:textAllCaps="false"
                 android:textSize="17dp"
                 android:paddingLeft="40dp"

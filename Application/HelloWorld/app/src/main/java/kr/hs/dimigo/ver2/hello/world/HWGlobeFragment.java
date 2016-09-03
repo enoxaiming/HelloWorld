@@ -60,7 +60,7 @@ public class HWGlobeFragment extends GlobeMapFragment {
         globeControl.gestureDelegate = new GlobeController.GestureDelegate() {
             @Override
             public void userDidSelect(GlobeController globeControl, SelectedObject[] selObjs, Point2d loc, Point2d screenLoc) {
-
+                Log.e("TEST", loc.toString());
             }
 
             @Override
