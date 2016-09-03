@@ -28,4 +28,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+    compile 'com.yalantis:starwarstiles:0.1.1'
 }

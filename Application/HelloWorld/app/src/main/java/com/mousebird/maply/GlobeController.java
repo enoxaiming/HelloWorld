@@ -84,7 +84,7 @@ public class GlobeController extends MaplyBaseController implements View.OnTouch
 		globeView = new GlobeView(this,coordAdapter);
 		view = globeView;
 		globeView.northUp = true;
-		super.setClearColor(clearColor);
+		super.setClearColor(Color.parseColor("#000000"));
 
 		super.Init();
 
@@ -401,7 +401,7 @@ public class GlobeController extends MaplyBaseController implements View.OnTouch
 	GlobeGestureHandler gestureHandler = null;
 	
 	/**
-	 * Use this delegate when you want user interface feedback from the maply controller.
+	 * Use this delegate when you want user interfaces feedback from the maply controller.
 	 * 
 	 * @author sjg
 	 *

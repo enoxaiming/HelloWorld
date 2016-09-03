@@ -26,7 +26,7 @@ import android.util.Log;
 import java.util.ArrayList;
 
 /**
- * The shader is a direct interface to OpenGL ES 2.0 shader language.
+ * The shader is a direct interfaces to OpenGL ES 2.0 shader language.
  * <p>
  * You can set your own shader programs in the toolkit!  Yeah, that's as complex as it sounds.
  * The underyling toolkit makes a distinction between the name of the shader and the scene name.  The scene name is used as a way to replace the default shaders we use for triangles and lines.  This would let you replace the shaders you're already using with your own.  See the addShaderProgram:sceneName: method in the MaplyBaseViewController.

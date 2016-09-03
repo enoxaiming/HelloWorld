@@ -2,6 +2,7 @@ package kr.hs.dimigo.ver2.hello.world;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,7 +13,6 @@ import com.mousebird.maply.*;
 import kr.hs.dimigo.ver2.hello.world.globe.marker.HWScreenMarker;
 
 import java.io.File;
-import java.io.InterruptedIOException;
 import java.util.ArrayList;
 import java.util.List;
 

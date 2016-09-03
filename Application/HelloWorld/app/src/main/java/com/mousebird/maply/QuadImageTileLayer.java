@@ -50,7 +50,7 @@ public class QuadImageTileLayer extends Layer implements LayerThread.ViewWatcher
 	}
 
 	/**
-	 * The Tile Source is the interface used to actually fetch individual images for tiles.
+	 * The Tile Source is the interfaces used to actually fetch individual images for tiles.
 	 * You fill this in to provide data for remote or local tile queries.
 	 * 
 	 * @author sjg

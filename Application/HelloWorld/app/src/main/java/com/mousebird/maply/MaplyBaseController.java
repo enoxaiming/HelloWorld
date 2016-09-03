@@ -278,9 +278,7 @@ public class MaplyBaseController
 
 				// If the clear color has transparency, we need to set things up differently
 				if (Color.alpha(clearColor) < 255) {
-					glSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
-					glSurfaceView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
-					glSurfaceView.setZOrderOnTop(true);
+
 				} else {
 					if (isProbablyEmulator())
 						glSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
@@ -288,11 +286,16 @@ public class MaplyBaseController
 
 				tempBackground = new ColorDrawable();
 				// This eliminates the black flash, but only if the clearColor is set right
-				tempBackground.setColor(clearColor);
-				if (Build.VERSION.SDK_INT > 16)
-					glSurfaceView.setBackground(tempBackground);
+				//tempBackground.setColor(clearColor);
+				//if (Build.VERSION.SDK_INT > 16)
+				//glSurfaceView.setBackgroundColor(Color.parseColor("#FFFFFF"));
 				glSurfaceView.setEGLContextClientVersion(2);
+				glSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
 				glSurfaceView.setRenderer(renderWrapper);
+				glSurfaceView.setZOrderOnTop(true);
+				glSurfaceView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
+
+
 
 				baseView = glSurfaceView;
 			} else {
@@ -318,7 +321,7 @@ public class MaplyBaseController
 				// This eliminates the black flash, but only if the clearColor is set right
 				tempBackground.setColor(clearColor);
 				if (Build.VERSION.SDK_INT > 16)
-					glTextureView.setBackground(tempBackground);
+					//glTextureView.setBackground(tempBackground);
 				glTextureView.setEGLContextClientVersion(2);
 				glTextureView.setRenderer(renderWrapper);
 
@@ -777,7 +780,7 @@ public class MaplyBaseController
 //			tempBackground.setColor(clearColor);
 
 		if (renderWrapper.maplyRender != null)
-			renderWrapper.maplyRender.setClearColor(Color.red(color)/255.f,Color.green(color)/255.f,Color.blue(color)/255.f,Color.alpha(color)/255.f);
+			renderWrapper.maplyRender.setClearColor(Color.red(color)/255.f,Color.green(color)/255.f,Color.blue(color)/255.f,0);
 	}
 
 	/**

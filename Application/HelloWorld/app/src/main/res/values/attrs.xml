@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HWStarAnimationView">
+        <attr name="animationDuration" format="integer" />
+        <attr name="numberOfTileX" format="integer" />
+    </declare-styleable>
+</resources>

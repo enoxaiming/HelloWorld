@@ -4,8 +4,12 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/hw_activity_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="kr.hs.dimigo.ver2.hello.world.HWMainActivity">
+        android:layout_height="match_parent">
+
+    <android.opengl.GLSurfaceView
+            android:id="@+id/hw_activity_main_GLSURFACEVIEW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     <fragment
             android:layout_width="match_parent"
