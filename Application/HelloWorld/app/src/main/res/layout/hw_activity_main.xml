@@ -12,6 +12,7 @@
             android:layout_height="match_parent"/>
 
     <fragment
+            android:layout_marginTop="24dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:name="kr.hs.dimigo.ver2.hello.world.HWGlobeFragment"

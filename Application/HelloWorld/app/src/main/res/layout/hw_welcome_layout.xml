@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+        <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:id="@+id/hw_welcome_layout_LOGO_IMAGEVIEW"
+                app:srcCompat="@drawable/hw_globe"
+                android:layout_centerHorizontal="true"/>
+
+        <TextView
+                android:id="@+id/hw_welcome_layout_TITLE_TEXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="32dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="@string/hw_welcome_layout_TITLE"
+                android:layout_below="@id/hw_welcome_layout_LOGO_IMAGEVIEW"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:textSize="40dp" />
+        <TextView
+                android:id="@+id/hw_welcome_layout_SUMMARY_TEXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="@string/hw_welcome_layout_SMALL_TITLE"
+                android:layout_below="@+id/hw_welcome_layout_TITLE_TEXT"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+        <Button
+                android:layout_below="@+id/hw_welcome_layout_SUMMARY_TEXT"
+                android:layout_margin="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/hw_welcome_layout_BUTTON"
+                android:background="@drawable/hw_welcome_button"
+                android:text="@string/hw_welcome_layout_GOGO_BUTTON_TEXT"
+                android:lines="1"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+
+
+</RelativeLayout>

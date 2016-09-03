@@ -9,13 +9,12 @@ import kr.hs.dimigo.ver2.hello.world.particle.HWParticleRenderer;
 public class HWMainActivity extends AppCompatActivity {
 
     private GLSurfaceView mSurfaceView;
+    //private boolean isAccepted = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hw_activity_main);
-
-        startActivity(new Intent(this, HWWelcomeActivity.class));
 
         mSurfaceView = (GLSurfaceView)findViewById(R.id.hw_activity_main_GLSURFACEVIEW);
 

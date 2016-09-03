@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.opengl.GLSurfaceView
+                android:id="@+id/hw_welcome_activity_GLSURFACEVIEW"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"/>
 
-    <android.opengl.GLSurfaceView
-            android:id="@+id/hw_welcome_activity_GLSURFACEVIEW"
+        <FrameLayout
+                android:id="@+id/hw_welcome_activity_FRAMELAYOUT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-    <FrameLayout
-            android:id="@+id/hw_welcome_activity_FRAMELAYOUT"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_height="24dp"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="Copyright © 2016. Dimigo_ver02. All rights reserved."/>
 </RelativeLayout>
