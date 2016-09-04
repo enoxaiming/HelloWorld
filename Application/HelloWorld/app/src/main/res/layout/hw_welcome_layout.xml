@@ -23,7 +23,7 @@
                 android:paddingTop="32dp"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:text="@string/hw_welcome_layout_TITLE"
+                android:text="Hello World!"
                 android:layout_below="@id/hw_welcome_layout_LOGO_IMAGEVIEW"
                 android:layout_centerHorizontal="true"
                 android:textColor="@android:color/white"

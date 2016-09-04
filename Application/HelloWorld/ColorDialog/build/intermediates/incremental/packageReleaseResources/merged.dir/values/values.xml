@@ -9,6 +9,7 @@
     <color name="color_type_success">#90b06e</color>
     <color name="color_type_warning">#e8bd4b</color>
     <color name="color_type_wrong">#ed7861</color>
+    <declare-styleable name="MaxHeightScrollView"><attr format="dimension" name="maxHeight"/></declare-styleable>
     <string name="app_name">ColorDialog</string>
     <style name="color_dialog" parent="android:Theme.Dialog">
         <item name="android:windowIsFloating">true</item>

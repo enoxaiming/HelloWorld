@@ -21,7 +21,8 @@ public class RootClass{
 	}
 	public Result getResults(){
 		results = this.results;
-		result = results[0];
+		int rsize = results.length;
+		result = results[rsize-1];
 		return result;
 	}
 	public void setStatus(String status){

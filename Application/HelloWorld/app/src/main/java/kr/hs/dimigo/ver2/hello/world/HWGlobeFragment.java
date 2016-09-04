@@ -60,7 +60,8 @@ public class HWGlobeFragment extends GlobeMapFragment {
         globeControl.gestureDelegate = new GlobeController.GestureDelegate() {
             @Override
             public void userDidSelect(GlobeController globeControl, SelectedObject[] selObjs, Point2d loc, Point2d screenLoc) {
-                Log.e("TEST", loc.toString());
+                HWMainActivity mActivity = (HWMainActivity)getActivity();
+                mActivity.getCounteryFromServer(loc.toDegrees().getX(), loc.toDegrees().getY());
             }
 
             @Override
@@ -89,8 +90,8 @@ public class HWGlobeFragment extends GlobeMapFragment {
                 mCurrentPositionAxis[1] = globeControl.getPositionGeo().getY();
                 mCurrentPositionAxis[2] = globeControl.getPositionGeo().getZ();
 
-                //Log.e("Axis", globeControl.getPositionGeo().toString());
-                Log.e("Height", globeControl.getGlobeView().getHeight() + "");
+                Log.e("Axis", globeControl.getPositionGeo().toString());
+                //Log.e("Height", globeControl.getGlobeView().getHeight() + "");
 
                 if(globeControl.getGlobeView().getHeight() > 0.80) {
                     globeControl.getGlobeView().setHeight(0.80);

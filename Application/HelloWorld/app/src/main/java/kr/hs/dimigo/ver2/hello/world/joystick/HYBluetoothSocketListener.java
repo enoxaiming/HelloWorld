@@ -56,7 +56,7 @@ public class HYBluetoothSocketListener implements Runnable {
                                 s2[j] = s[j].split(":")[1];
                             }
 
-                            mListener.onReceivedDataFromJoystic(true, Integer.parseInt(s2[0]), Integer.parseInt(s2[1]), stringToBoolean(s2[2]), Integer.parseInt(s2[3]), Integer.parseInt(s2[4]), stringToBoolean(s2[5]), Integer.parseInt(s2[6]));
+                            mListener.onReceivedDataFromJoystic(true, Integer.parseInt(s2[0]), Integer.parseInt(s2[1]), stringToBoolean(s2[2]), Integer.parseInt(s2[3]), Integer.parseInt(s2[4]), stringToBoolean(s2[5]), s2[6]);
                         }
 
                         //Log.w("BT_TAG", b);
@@ -68,7 +68,7 @@ public class HYBluetoothSocketListener implements Runnable {
                 }
             }
         } catch (IOException e) {
-            mListener.onReceivedDataFromJoystic(false, 0, 0, false, 0, 0, false, 0);
+            mListener.onReceivedDataFromJoystic(false, 0, 0, false, 0, 0, false, "0");
             //Log.d("BLUETOOTH_COMMS", e.getMessage());
         }
     }

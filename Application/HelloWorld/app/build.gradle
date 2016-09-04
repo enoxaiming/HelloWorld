@@ -33,4 +33,7 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
     compile project(':libColorDialog')
+    compile 'org.jsoup:jsoup:1.7.3'
+    compile files('libs/commons-codec-1.9.jar')
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

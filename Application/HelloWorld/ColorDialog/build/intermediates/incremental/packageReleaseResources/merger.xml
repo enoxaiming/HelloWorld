@@ -8,4 +8,6 @@
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.4</item>
-    </style></file></source><source path="/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/generated/res/rs/release"/><source path="/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/generated/res/resValues/release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/src/release/res"/></dataSet><mergedItems/></merger>
+    </style></file><file path="/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="MaxHeightScrollView">
+        <attr format="dimension" name="maxHeight"/>
+    </declare-styleable></file></source><source path="/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/generated/res/rs/release"/><source path="/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/build/generated/res/resValues/release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="/Users/dsa28s/Desktop/해카톤/Application/HelloWorld/ColorDialog/src/release/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="MaxHeightScrollView"><attr format="dimension" name="maxHeight"/></declare-styleable></configuration></mergedItems></merger>

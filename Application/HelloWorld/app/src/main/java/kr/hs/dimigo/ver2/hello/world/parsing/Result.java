@@ -23,7 +23,7 @@ public class Result{
 		this.address_components = addressComponents;
 	}
 	public AddressComponent getAddressComponents(){
-		addressComponent = address_components[6];
+		addressComponent = address_components[0];
 		return this.addressComponent;
 	}
 	public void setFormattedAddress(String formattedAddress){

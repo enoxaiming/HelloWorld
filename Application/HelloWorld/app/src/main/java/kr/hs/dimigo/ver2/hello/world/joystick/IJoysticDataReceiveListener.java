@@ -7,5 +7,5 @@ import android.bluetooth.BluetoothSocket;
  */
 
 public interface IJoysticDataReceiveListener {
-    void onReceivedDataFromJoystic(boolean isC, int x1, int y1, boolean b1, int x2, int y2, boolean b2, int uid);
+    void onReceivedDataFromJoystic(boolean isC, int x1, int y1, boolean b1, int x2, int y2, boolean b2, String uid);
 }

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Hello World</string>
 
-    <string name="hw_welcome_layout_TITLE">Hello World!</string>
+    <string name="hw_welcome_layout_TITLE">Hello World! : 세계정복 대작전</string>
     <string name="hw_welcome_layout_SMALL_TITLE">세계정복 대작전</string>
     <string name="hw_welcome_layout_GOGO_BUTTON_TEXT">세계정복 하러가기</string>
 

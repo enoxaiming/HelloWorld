@@ -13,7 +13,7 @@ package kr.hs.dimigo.ver2.hello.world.parsing;
 public class AddressComponent{
 
 	private String long_name;
-	private String shortName;
+	private String short_name;
 	private String[] types;
 
 	public void setLongName(String longName){
@@ -23,10 +23,10 @@ public class AddressComponent{
 		return this.long_name;
 	}
 	public void setShortName(String shortName){
-		this.shortName = shortName;
+		this.short_name = shortName;
 	}
 	public String getShortName(){
-		return this.shortName;
+		return this.short_name;
 	}
 	public void setTypes(String[] types){
 		this.types = types;
